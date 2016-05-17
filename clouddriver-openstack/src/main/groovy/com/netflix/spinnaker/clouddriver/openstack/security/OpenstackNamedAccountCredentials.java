@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Veritas Technologies LLC.
+ * Copyright 2016 Veritas Technologies LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ package com.netflix.spinnaker.clouddriver.openstack.security;
 
 import com.netflix.spinnaker.clouddriver.security.AccountCredentials;
 
-import java.util.Collections;
 import java.util.List;
 
 public class OpenstackNamedAccountCredentials implements AccountCredentials<OpenstackCredentials> {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Veritas Technologies LLC.
+ * Copyright 2016 Veritas Technologies LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@ package com.netflix.spinnaker.clouddriver.openstack
 import com.netflix.spinnaker.clouddriver.openstack.config.OpenstackConfigurationProperties
 import com.netflix.spinnaker.clouddriver.openstack.health.OpenstackHealthIndicator
 import com.netflix.spinnaker.clouddriver.openstack.security.OpenstackCredentialsInitializer
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.beans.factory.config.ConfigurableBeanFactory
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.boot.context.properties.ConfigurationProperties
@@ -28,7 +27,6 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Import
-import org.springframework.context.annotation.PropertySource
 import org.springframework.context.annotation.Scope
 import org.springframework.scheduling.annotation.EnableScheduling
 
