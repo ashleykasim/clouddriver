@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Veritas Technologies LLC.
+ * Copyright 2016 Veritas Technologies LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ class OpenstackHealthIndicator implements HealthIndicator {
       for (OpenstackNamedAccountCredentials accountCredentials in openstackCredentialsSet) {
         OpenstackCredentials openstackCredentials = accountCredentials.credentials
 
-        openstackCredentials.getClient().authenticate();
+        openstackCredentials.getClient().getToken();
       }
 
       lastException.set(null)
