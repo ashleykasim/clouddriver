@@ -18,7 +18,7 @@ package com.netflix.spinnaker.clouddriver.openstack
 
 import spock.lang.Specification
 
-class OpenstackCloudProviderSpec extends Specification{
+class OpenstackCloudProviderSpec extends Specification {
 
   def openstackCloudProvider
 
