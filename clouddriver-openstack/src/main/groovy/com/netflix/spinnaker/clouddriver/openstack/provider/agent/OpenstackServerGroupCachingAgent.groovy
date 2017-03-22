@@ -89,6 +89,9 @@ class OpenstackServerGroupCachingAgent extends AbstractOpenstackCachingAgent imp
   @Override
   CacheResult loadData(ProviderCache providerCache) {
     List<Stack> stacks = clientProvider.listStacks(region)
+    System.out.println("\n\n\n\n\n\n\n\n\n\nclientProvider.listStacks(region): " + clientProvider.listStacks(region) + "\n\n\n\n\n\n\n")
+    System.out.println("\n\n\n\n\n\n\n\n\n\nclientProvider.getRegionClient(region).toString(): " + clientProvider.getRegionClient(region).toString() + "\n\n\n\n\n\n\n")
+
     List<String> serverGroupKeys = stacks.collect { Keys.getServerGroupKey(it.name, accountName, region) }
 
     buildLoadDataCache(providerCache, serverGroupKeys) { CacheResultBuilder cacheResultBuilder ->
